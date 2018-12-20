@@ -1,0 +1,153 @@
+---------------------------- 【一.安装配置编译环境】---------------------------------------------
+百度搜:win3编译ffmpeg 
+会出现许多教程，自己去找吧
+例如这个教程：https://www.cnblogs.com/subo_peng/p/6809465.html
+
+
+-----------------------------【二.下载ffmpeg】----------------------------------------
+可以去ffmpeg官网下载最新的版本
+或者去github下载指定的历史版本
+我目前是从github下载 FFmpeg-n4.0.2
+把ffmpeg解压后放在一个英文路径目录下，其中MinGW切换磁盘的命令是，比如 cd C:
+-----------------------------【三.vs2015编译配置思路】----------------------------------------------------------
+因为只需要用到ffmpeg视频解码器h264、hevc和音频解码aac、ac3、eac3，于是没必要编译全部用不到的.c文件。
+
+因为ffmpeg可以通过configure配置有选择的禁止没必要功能不被编进去，那么肯定只选择有用到的.c文件被编，于是只要找到编译这些
+.c文件的命令行，而这个命令行就在common.mak文件里，这个时候要通过方法把这个被编译的.c文件copy一份到提前创建好的指定目录里，
+等编译成功后，我们所需要的.c文件就被自动挑选出来，这样就没必要手工去找了。
+
+有了需要的.c文件后，还需要编译的宏配置，这个可以在ffbuild\config.mak的CPPFLAGS找到,或者通过common.mak编译时打印出编译命令也可以知道
+
+依赖的系统库：可以去下载一个叫 查看dll依赖关系工具 的工具，把编译好的*.dll库，拖进去就可以看到引用了哪些系统库
+
+比如要编译avcodec、avformat这两个主要，那么最好把这两个分别创建一个静态库项目，然后再引用它，这个会比较容易避免不必要的编译麻烦
+
+
+-----------------------------【四.ffmpeg主要配置文件】--------------------------------------------
+1.configure:可以根据自己要求自定义编译配置，比如avcodec只支持h264、aac，其他用不到就这样配置禁止,所以首先要先执行这个
+
+2.ffbuild\common.mak:这个配置文件时configure生成的，其中比较重要的是如下
+%.o: %.c
+# 	$^：构造所需文件列表所有所有文件的名字
+# 	$<：构造所需文件列表的第一个文件的名字
+
+	# $(warning ==== $<  ,$^)
+	cp $< c:\tmp\ffmpeg_win_source\$<
+	$(COMPILE_C)
+	# $(warning =============== $(COMPILE_C))
+
+可以通过warning查看其中的被编译文件名和COMPILE_C的内容。
+cp命令会把被编译的.c文件复制一份，自动挑选需要的.c文件
+COMPILE_C就是编译每个.c文件的命令参数
+
+------------------------------【五.configure配置参数】-----------------------------------------------
+	./configure \
+	--disable-x86asm \
+	--prefix=./win32 \
+	--cpu=i686 \
+	--toolchain=msvc \
+	--extra-cflags="-Z7 -Wall" \
+	--disable-programs \
+	--disable-ffmpeg \
+	--disable-ffplay \
+	--disable-ffprobe \
+	--disable-doc \
+	--disable-htmlpages \
+	--disable-manpages \
+	--disable-podpages \
+	--disable-txtpages \
+	--disable-avdevice \
+	--disable-postproc \
+	--disable-avfilter \
+\
+	--disable-asm       \
+	--disable-encoders	\
+	--disable-decoders \
+	--disable-bsfs \
+	--disable-parsers \
+	--enable-decoder=ac3 \
+	--enable-decoder=eac3 \
+	--enable-decoder=aac \
+	--enable-decoder=h264 \
+	--enable-parser=h264 \
+	--enable-decoder=hevc \
+	--enable-parser=hevc \
+	--enable-debug \
+	--enable-shared \
+
+上面的配置只对avcodec进行有选择编译，一个原因是主要用到h264等主要,二是全都编进去会比较麻烦
+因为ffmpeg有的功能会用到汇编，但是在编译用到汇编时找不到定义，于是为了减少麻烦便去掉汇编，因此添加了disable-asm
+
+可以把上面的配置写进一个build_full_win32.sh的脚本里
+
+
+其他方便命令
+make libavcodec/avcodec.dll		编译指定库
+make libavcodec clean			删除之前编译好的
+make libavcodec/avcodec.dll -j4 > log.txt 2>&1	有时为了查看编译内容，可以写入log.txt文件里
+把上面的命令写入makefile文件里
+
+
+-------------------------- 【vs2015配置】 -----------------------------------
+1、c/c++  -->预编译头--->不使用预编译头
+2、c/c++  -->常规--->SDL检查 -->否
+3、附加库依赖项
+secur32.lib
+ws2_32.lib
+ole32.lib
+user32.lib
+bcrypt.lib
+kernel32.lib
+4、附加库目录
+C:\Program Files\Microsoft SDKs\Windows\v7.1\Lib;
+5、预处理器定义
+WIN32
+_DEBUG
+_CONSOLE
+_CRT_SECURE_NO_DEPRECATE
+_ISOC99_SOURCE
+_LARGEFILE_SOURCE
+_USE_MATH_DEFINES
+_CRT_SECURE_NO_WARNINGS
+_CRT_NONSTDC_NO_WARNINGS
+HAVE_AV_CONFIG_H
+_WIN32_WINNT=0x0600
+_FILE_OFFSET_BITS=64
+
+
+
+
+-------------------------------【vs2015编译注意事项】---------------------------------------
+
+
+libavcodec目录下
+下面这些文件被 include包含在.c文件里，因此不要添加编译进去，不然会重定义冲突，或报一些找不到头文件错误
+*_template.c
+*_list.c
+aacpsdata.c
+aacps.c
+ac3dec.c
+eac3dec.c
+
+
+libavformat
+rtmpcrypt.c
+rtmpproto.c
+
+libavcodec\golomb.c
+
+
+---------------------------------------------------
+avformat引用avcodec的静态库时报下面错误
+avformat.lib(rtpdec_jpeg.obj) : error LNK2001: 无法解析的外部符号 __imp__avpriv_mjpeg_bits_ac_luminance
+
+解决方法:
+extern av_export_avcodec const uint8_t avpriv_mjpeg_bits_dc_luminance[]; 去掉av_export_avcodec
+
+jpegtables.h
+
+
+--------------- libswresample -----------------
+以下.c会被include
+*_template.c
+noise_shaping_data.c

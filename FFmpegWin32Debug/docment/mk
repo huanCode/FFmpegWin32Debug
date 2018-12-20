@@ -1,0 +1,16 @@
+# make libavcodec/avcodec.dll
+# make libavcodec/avcodec.dll -j4 > log.txt 2>&1
+# make libavformat/avformat.dll -j4 > log.txt 2>&1
+# make libavformat/avformat.dll
+# make libavcodec clean
+# make libavutil clean
+# make libavformat clean
+make libavutil/avutil.dll
+# make libavutil clean
+# make libswresample/swresample.dll
+# make libswresample clean
+# make libswscale/swscale.dll
+# make libswscale clean
+
+# make -j4 > log.txt 2>&1
+

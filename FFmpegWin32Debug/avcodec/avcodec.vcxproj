@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{36C8710C-5204-4256-8F9C-7BB7A11CB818}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>avcodec</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>avcodec</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_ISOC99_SOURCE;_LARGEFILE_SOURCE;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_AV_CONFIG_H;_WIN32_WINNT=0x0600;_FILE_OFFSET_BITS=64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\FFmpeg-n4.0.2_debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v7.1\Lib;F:\vs2015project\ConsoleApplication2\FFmpeg-n4.0.2_debug\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>secur32.lib;ws2_32.lib;ole32.lib;user32.lib;bcrypt.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\aacdec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\aacpsdsp_float.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\aacps_float.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\aacsbr.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\aactab.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\aac_ac3_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ac3.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ac3dec_data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ac3dec_float.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ac3dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ac3tab.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ac3_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\adts_header.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\adts_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\allcodecs.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\avdct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\avfft.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\avpacket.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\avpicture.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\bitstream.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\bitstream_filter.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\bitstream_filters.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\blockdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\bsf.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\bswapdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\cabac.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\cbrt_data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\codec2utils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\codec_desc.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\d3d11va.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dca.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dca_exss.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dca_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\decode.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dirac.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dirac_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dnxhddata.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dv_profile.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dxva2.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dxva2_h264.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dxva2_hevc.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dxva2_mpeg2.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\dxva2_vc1.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\eac3_data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\encode.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\error_resilience.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\exif.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\faandct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\faanidct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fdctdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fft_fixed.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fft_fixed_32.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fft_float.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fft_init_table.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\file_open.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fits.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\flac.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\flacdata.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\flac_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\flvdec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\fmtconvert.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\golomb.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h263.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h263data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h263dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h263dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h263_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h2645_parse.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264chroma.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264idct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264pred.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264qpel.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_cabac.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_cavlc.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_direct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_loopfilter.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_mb.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_parse.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_picture.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_ps.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_refs.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_sei.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\h264_slice.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevcdec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevcdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevcpred.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_cabac.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_filter.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_mvs.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_parse.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_ps.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_refs.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hevc_sei.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\hpeldsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\idctdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\imgconvert.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\intelh263dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\intrax8.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\intrax8dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\ituh263dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\jfdctfst.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\jfdctint.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\jni.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\jpegtables.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\jrevdct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\kbdwin.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\log2_tab.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mathtables.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mdct15.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mdct_fixed.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mdct_fixed_32.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mdct_float.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mediacodec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\me_cmp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mjpegenc_huffman.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg12.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg12data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg12dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg12framerate.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg4audio.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg4video.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg4videodec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegaudiodata.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegaudiodecheader.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegaudio_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegpicture.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegutils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegvideo.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegvideodata.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegvideodsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpegvideo_motion.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\mpeg_er.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\msmpeg4.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\msmpeg4data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\msmpeg4dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\null_bsf.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\options.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\pixblockdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\profiles.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\pthread.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\pthread_frame.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\pthread_slice.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\qpeldsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\qsv_api.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\raw.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\reverse.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\rl.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\sbrdsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\simple_idct.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\sinewin.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\sinewin_fixed.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\startcode.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\tak.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\tak_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\tiff_common.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\utils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1dec.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1_block.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1_loopfilter.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1_mc.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vc1_pred.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\videodsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vorbis_data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\vorbis_parser.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\wmv2data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\wmv2dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavcodec\xiph.c" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\avutil\avutil.vcxproj">
+      <Project>{60f0796b-553a-4eae-aa68-b28e971fc6a0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\swresample\swresample.vcxproj">
+      <Project>{a07abd89-0a5d-4547-892e-2682f364e5b9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\swscale\swscale.vcxproj">
+      <Project>{6f2e7f04-772a-4238-9b22-021d599b6c82}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

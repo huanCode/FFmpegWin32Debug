@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60F0796B-553A-4EAE-AA68-B28E971FC6A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>avutil</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;_ISOC99_SOURCE;_LARGEFILE_SOURCE;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;HAVE_AV_CONFIG_H;_WIN32_WINNT=0x0600;_FILE_OFFSET_BITS=64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>..\FFmpeg-n4.0.2_debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>secur32.lib;ws2_32.lib;ole32.lib;user32.lib;bcrypt.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\Microsoft SDKs\Windows\v7.1\Lib;F:\vs2015project\ConsoleApplication2\FFmpeg-n4.0.2_debug\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\adler32.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\aes.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\aes_ctr.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\audio_fifo.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\avstring.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\base64.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\blowfish.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\bprint.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\buffer.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\camellia.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\cast5.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\channel_layout.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\color_utils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\cpu.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\crc.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\des.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\dict.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\display.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\downmix_info.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\encryption_info.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\error.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\eval.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\fifo.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\file.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\file_open.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\fixed_dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\float_dsp.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\frame.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\hash.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\hmac.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\hwcontext.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\hwcontext_d3d11va.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\hwcontext_dxva2.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\imgutils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\integer.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\intmath.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\lfg.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\lls.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\log.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\log2_tab.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\lzo.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\mastering_display_metadata.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\mathematics.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\md5.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\mem.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\murmur3.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\opt.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\parseutils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\pixdesc.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\pixelutils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\random_seed.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\rational.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\rc4.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\reverse.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\ripemd.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\samplefmt.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\sha.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\sha512.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\slicethread.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\spherical.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\stereo3d.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\tea.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\threadmessage.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\time.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\timecode.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\tree.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\twofish.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\utils.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\xga_font_data.c" />
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavutil\xtea.c" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="avformat">
+      <UniqueIdentifier>{7db7162c-2e81-4e1d-948a-02bced44fab1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\allformats.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\protocols.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\yuv4mpegenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\yuv4mpegdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\xwma.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\yop.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\xvag.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\xa.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\xmv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wvenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wvedec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wtvenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wtvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wtv_common.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\westwood_vqa.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wsddec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\westwood_aud.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\webvttdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\webvttenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\webpenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\webmdashenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wc3movie.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\webm_chunk.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wavenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\w64.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\wavdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vqf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vpk.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vplayerdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vorbiscomment.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vpcc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vocdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vocenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\voc_packet.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\voc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vc1testenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vivo.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vc1test.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vag.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\vc1dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\v210.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\urldecode.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\utils.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\url.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\udp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\uncodedframecrcenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ty.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\txd.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ttaenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tty.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tta.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tmv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tls.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tls_schannel.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tiertexseq.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tee_common.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\teeproto.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\thp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tee.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tedcaptionsdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\takdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\tcp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\swfenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\swfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\svag.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\swf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\supenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\supdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\subviewer1dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\subviewerdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\subfile.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\subtitles.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\stldec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\srtp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\srtpproto.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\srtenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\spdifdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\spdifenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\srtdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\soxenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\spdif.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\soxdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\smush.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sol.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\smoothstreamingenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\smjpegdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\smjpegenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\smjpeg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\smacker.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sierravmd.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\siff.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\shortendec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\segafilmenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\segment.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\segafilm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sdxdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sdr2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sdsdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sdp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sccdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sccenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sbgdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sauce.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sbcdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sapdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\sapenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\samidec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtspenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\s337m.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtspdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtsp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_vp9.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_xiph.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpproto.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_vc2hq.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_vp8.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_latm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_mpegts.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_mpv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_h264_hevc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_jpeg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_h261.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_h263.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_h263_rfc2190.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_amr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_chain.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpenc_aac.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_vp9.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_xiph.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_vc2hq.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_vp8.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_rfc4175.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_svq3.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_qt.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_qcelp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_qdm2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_mpeg4.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_mpegts.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_mpa_robust.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_mpeg12.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_jpeg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_latm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_h264.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_hevc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_ilbc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_h263.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_h263_rfc2190.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_dv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_g726.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_h261.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_asf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_ac3.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec_amr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtpdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtmppkt.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtmpdigest.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rtmphttp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rsoenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rsodec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rsd.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rso.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rmsipr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rpl.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rmenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rmdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rl2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\riffenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\riff.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\riffdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\replaygain.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\redspark.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rdt.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\realtextdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rawvideodec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rawutils.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rawdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\rawenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\qtpalette.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\r3d.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\qcp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pvfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\psxstr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pva.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\prompeg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pmpdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pcmenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pjsdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pcm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\pcmdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\paf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\os_support.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\omaenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\options.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\omadec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsevp8.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oma.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsevorbis.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsetheora.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparseskeleton.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsespeex.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparseopus.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparseogm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsedirac.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparseflac.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsedaala.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggparsecelt.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\oggenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nuv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nutenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nut.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nutdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nsvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nullenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nspdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\nistspheredec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ncdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\network.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mxg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mxfenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mxf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mxfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mvi.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mux.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\musx.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mtaf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mtv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\msnwc_tcp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpsubdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\msf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpl2dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpjpeg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpjpegdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpegtsenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpegvideodec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpegts.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpegenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpc8.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpeg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mpc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mp3enc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\movenchint.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mp3dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\movenccenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mov_esds.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\movenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mov_chan.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mmst.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mov.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mmsh.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mms.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mmf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mlpdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mlvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mj2kdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mkvtimestamp_v2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\microdvdenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\microdvddec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\md5proto.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\metadata.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\mgsts.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\matroskaenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\matroskadec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\m4vdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\matroska.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\lxfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\lvfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\lrcdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\lrcenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\log2_tab.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\lrc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\lmlm4.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\loasdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\latmenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\jacosubenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\jvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\jacosubdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ivfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ivfenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\iv8.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\iss.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ircamenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\isom.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ircamdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ircam.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ingenientdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ipmovie.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\img2dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\img2enc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\img2_alias_pix.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\img2_brender_pix.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\img2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\iff.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ilbc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\idroqdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\idroqenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\idcin.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\id3v2enc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\icoenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\id3v1.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\id3v2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\icodec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\icecast.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\http.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\httpauth.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hnm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hlsplaylist.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hlsproto.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hlsenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hevcdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hls.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hdsenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hevc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\hashenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\h261dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\h263dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\h264dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gxfenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gxf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gsmdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\golomb_tab.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gopher.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gif.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gifdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\genh.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\gdv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\g726.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\g729dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\g723_1.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ftp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\g722.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\fsb.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\framehash.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\frmdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\framecrcenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flvenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\format.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flvdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flacenc_header.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flic.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flacenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flacdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\flac_picture.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\fitsdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\fitsenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\filmstripdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\filmstripenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\file_open.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\fifo_test.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\file.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ffmetaenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\fifo.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ffmetadec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\electronicarts.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\epafdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\eacdata.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dxa.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dvbsub.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dvbtxt.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dvenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dump.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dtshddec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dss.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dtsdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dsicin.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dsfdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\diracdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dnxhddec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dfa.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dauddec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\daudenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dcstr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\data_uri.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dashenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cutils.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\dash.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\crypto.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\concatdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\crcenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\concat.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cinedec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\codec2.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cdxl.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cavsvideodec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cdg.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cafenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\caf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cafdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\cache.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\c93.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\boadec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\brstm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\bmv.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\bit.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\bink.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\bintext.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\bfi.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avs.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\bethsoftvid.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avlanguage.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aviobuf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avio.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avienc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\avidec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\au.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\audiointerleave.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\async.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\astdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\astenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ast.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\assdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\assenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\asfenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\asfdec_o.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\asfcrypt.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\asfdec_f.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aqtitledec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\asf.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aptxdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\apngdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\apngenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\apetag.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\apc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ape.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\anm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\amr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aixdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aiffenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\afc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aiffdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\adxdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aea.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\adtsenc.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\adp.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ads.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\act.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\ac3dec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\acm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aadec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\a64.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\aacdec.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\3dostr.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FFmpeg-n4.0.2_debug\libavformat\4xm.c">
+      <Filter>avformat</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
